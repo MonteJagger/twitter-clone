@@ -1,0 +1,39 @@
+.tweet-container {
+    background: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .user-detail {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .user-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+  
+    h3 {
+      margin: 0;
+      font-size: 12px;
+    }
+  
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  
+  .content {
+    height: 150px;
+    background: white;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }

@@ -6,7 +6,7 @@ import { useAuthState } from './services/auth';
 function App() {
   const { user, loading } = useAuthState()
   if (loading) {
-    console.log('Loading...')
+    console.log('Loading...', user)
     return <p>Loading...</p>
   }
 

@@ -1,7 +1,19 @@
 
 # Getting Started with Create React App
 
-  
+## Deployment with Firebase
+
+This app uses [Google Firebase](https://firebase.google.com/docs) for hosting.
+
+- **Automatic Deployment**: Changes pushed to the main branch will automatically trigger a build. Once completed, the app will be updated at the following URL:  
+  **Firebase Hosting URL:** https://twitter-clone-26875.web.app
+
+- **Manual Deployment**: To manually deploy changes, run the following command from the project root:
+  ```console
+  $ firebase deploy
+  ```
+
+
 
 To create a new React app with TypeScript, you can use the following command in the directory you want
 
@@ -9,8 +21,6 @@ To create a new React app with TypeScript, you can use the following command in 
 $ npx create-react-app app-name-here --template typescript
 $ cd app-name-here
 ```
-
-  
 
 ## Routing
 

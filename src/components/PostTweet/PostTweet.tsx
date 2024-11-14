@@ -1,22 +1,13 @@
 import { useState } from 'react';
 import styles from './PostTweet.module.scss'
-import { ref, push, getDatabase, set, serverTimestamp } from 'firebase/database';
-import app from '../../services/firebase';
+import { postTweet } from 'src/api/tweetApi';
 
 export const PostTweet: React.FC = () => {
     const [tweet, setTweet] = useState<string>('');
 
     async function handlePostTweet() {
-        const db = getDatabase(app)
-        const newTweetRef = push(ref(db, 'tweets'))
-        set(newTweetRef, {
-            id: newTweetRef.key,
-            media: '',
-            content: tweet,
-            date: serverTimestamp(),
-        })
-        console.log('Tweet posted?: ', tweet)
-        setTweet('')
+        postTweet(tweet)
+        setTweet('') // clear tweet
     }
 
     return (

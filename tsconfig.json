@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"] // Alias 'src' to the 'src' folder
+    },
     "target": "es5",
     "lib": [
       "dom",

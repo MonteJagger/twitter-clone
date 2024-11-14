@@ -1,7 +1,9 @@
-import './App.css';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { Feed } from './components/Feed/Feed';
-import { useAuthState } from './services/auth';
+import './App.css'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import { Feed } from './components/Feed/Feed'
+import { Login } from './Pages/Login/Login';
+
+// import { useAuthState } from './services/auth';
 
 function App() {
   // const { user, loading } = useAuthState()
@@ -14,6 +16,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" Component={Feed}></Route>
+        <Route path="/login" Component={Login}></Route>
       </Routes>
     </Router>
   )

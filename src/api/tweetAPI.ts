@@ -11,5 +11,4 @@ export async function postTweet(content: string, media?: string) {
         content: content,
         date: serverTimestamp(),
     })
-    console.log('Tweet posted?: ', content)
 }

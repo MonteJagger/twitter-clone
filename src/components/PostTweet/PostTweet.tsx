@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import styles from './PostTweet.module.scss'
-import { postTweet } from 'src/api/tweetApi';
+import { postTweet } from 'src/api/tweetApi'
 
 export const PostTweet: React.FC = () => {
     const [tweet, setTweet] = useState<string>('');

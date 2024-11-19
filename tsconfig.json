@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "", // Makes 'src/' the root for imports
+    "baseUrl": "./", // Makes 'src/' the root for imports
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

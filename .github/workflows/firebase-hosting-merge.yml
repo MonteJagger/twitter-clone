@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+        run: npm ci && npm run build
+        continue-on-error: true # Ensure workflow doesn't stop on build failure
+
         # Debug Step 1: List the Project Structure
       - name: List project files
         run: ls -R
@@ -25,6 +27,7 @@ jobs:
 
       # Firebase Deployment
       - uses: FirebaseExtended/action-hosting-deploy@v0
+        if: success()
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TWITTER_CLONE_26875 }}

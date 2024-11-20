@@ -1,5 +1,5 @@
 import { getDatabase, push, ref, set, serverTimestamp } from "firebase/database"
-import app from "src/services/firebase"
+import app from "services/firebase"
 
 // TODO: edit this file
 export async function postTweet(content: string, media?: string) {

@@ -1,5 +1,5 @@
 import { PostTweet } from "../PostTweet/PostTweet"
-import { Tweet } from "../Tweet/Tweet"
+import { Tweet } from "@components/Tweet/Tweet"
 import styles from "./Feed.module.scss"
 
 export const Feed: React.FC = () => {

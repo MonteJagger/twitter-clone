@@ -1,4 +1,5 @@
-import { LoginCard } from 'components/Login/LoginCard'
+
+import { LoginCard } from '../../components/Login/LoginCard'
 import styles from './Login.module.scss'
 
 export const Login: React.FC = () => {
